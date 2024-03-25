@@ -1,7 +1,7 @@
 "use server";
 import contactFormSchema from "@/schemas/contactForm";
 import Contact from "@/types/Contact";
-import { Resend } from "resend";
+// import { Resend } from "resend";
 
 export default async function submitFormAction(formData: unknown) {
   // const API_KEY = process.env.MAIL_API_KEY as string;
