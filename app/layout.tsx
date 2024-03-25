@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Trädgårdskrux.se",
-  description: "Tjänster - Trädfällning, sektionsfällning och beskärning",
+  title: "Bluefrog",
+  description: "Din AI assistent",
 };
 
 export default function RootLayout({
