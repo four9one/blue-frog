@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+main {
+  /* @apply bg-darker; */
+  /* height: 100vh; */
+}
+h1 {
+  @apply text-[27px] font-extrabold leading-7;
+}
+h2 {
+  @apply text-4xl;
+}
+label {
+  @apply mb-1 ml-1 text-sm font-bold;
+}
+/* label-light {
+  @apply mb-1 ml-1 text-sm font-bold text-slate-200;
+} */
+input,
+textarea {
+  @apply mb-4 resize-none rounded-lg border-[1px] border-[#555] px-2 py-2 placeholder-gray-400 shadow-sm focus:border-[#111] focus:shadow-lg  focus:outline-none sm:text-sm;
+}
+.navLink {
+  @apply font-bold text-lighter decoration-4 underline-offset-8;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("./assets/joan-contact.png");
+
+  /* Full height */
+  /* height: 80%; */
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: scroll; */
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+/* @media only screen and (max-device-width: 1366px) {
+  .parallax,
+  .parallax2 {
+    background-attachment: scroll;
+  }
+} */
+
+.login-container {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url("./assets/joan-login3.png");
+  background-size: cover;
+  /* transform: scaleX(-1); */
+}
+
+.background-container {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url("./assets/joan-contact.png");
+  background-size: cover;
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
+  );
+}
+@media (min-width: 640px) {
+  .background-container {
+    /* color: red; */
+    /* background-attachment: fixed; */
+    background-image: none;
+    /* background-image: url("./assets/profile2.png"); */
+    /* background-size: 100% 140%; */
+    /* background-position-x: right; */
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: none;
+  }
+}
